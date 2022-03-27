@@ -7,7 +7,7 @@
 	$token=$mysqli->real_escape_string($_POST['token']);
 	$password=$mysqli->real_escape_string($_POST['password']);
 	$con_password=$mysqli->real_escape_string($_POST['con_password']);
-	$url='http://'.$_SERVER["SERVER_NAME"].'/Catedra_LIS/cambiarC.php?user_id='.$user_id.'&token='.$token;	
+	$url='http://'.$_SERVER["SERVER_NAME"].'/CACTUSIVAR/cambiarC.php?user_id='.$user_id.'&token='.$token;	
 	//validamos contraseña
 	if(validaPassword($password,$con_password)){
 		$pass_hash=hashPassword($password);
