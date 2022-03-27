@@ -4,7 +4,6 @@
 
 ¡¡¡¡¡ Bienvenido usuario !!!!!!
 
-te damos la bienvenida a un nuevo metodo de aprendizaje online 📋.
 
 
 Manuel de Usuario 🧑🏻‍💻
@@ -15,12 +14,15 @@ Manuel de Usuario 🧑🏻‍💻
 
 Autores ✒️
 
-Katherine Lissette Sánchez Vila - Programación, diseño, lógica 
 
-Salvador Alejandro González Meléndez - Programación, diseño, lógica 
 
-Gerson Ernesto Lopez Chevez - Programación, diseño, lógica 
+Katherine Lissette Sánchez Vila                SV161855
 
+Gerson Ernesto López Chevez                    LC151886
+
+Oscar Steven García Menjívar                   GM191382
+
+Santos Ronaldo Lemus Torres
 
 
 Licencia 📄
