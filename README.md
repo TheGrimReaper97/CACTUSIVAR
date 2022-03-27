@@ -15,6 +15,9 @@ NUESTRO NOTION:
 https://opaque-megaraptor-69b.notion.site/Proyecto-de-Catedra-LIS-c9496916b15d438dbef56130cc37d36a
 
 
+Enlace al video ▶️: https://youtu.be/XNcZfhXZ9HM
+
+
 Autores ✒️
 
 
