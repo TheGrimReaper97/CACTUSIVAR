@@ -13,7 +13,7 @@ if(!empty($_POST)){
 			$nombre=getValor('nombre','correo',$email);
 			//generamos token
 			$token=generaTokenPass($user_id);
-			$url='http://'.$_SERVER["SERVER_NAME"].'/Catedra_LIS/cambiarC.php?user_id='.$user_id.'&token='.$token;	
+			$url='http://'.$_SERVER["SERVER_NAME"].'/CACTUSIVAR/cambiarC.php?user_id='.$user_id.'&token='.$token;	
 			$asunto='Recuperar Contrasena - Cactusivar';
 			$cuerpo="Estimado $nombre: <br/><br/>Para cambiar tu contrase&ntilde;a haz clic 
 			en el enlace: <a href='$url'>$url</a>";///recibimos la url

@@ -59,7 +59,7 @@
 				$registro=registraUsuario($usuario, $pass_hash, $nombre, $email, $activo, $token, $tipo_usuario);		
 				
 				if($registro > 0){//si devuelve id de registro
-					$url='http://'.$_SERVER["SERVER_NAME"].'/Catedra_LIS/activar.php?id='.$registro.'&val='.$token;	
+					$url='http://'.$_SERVER["SERVER_NAME"].'/CACTUSIVAR/activar.php?id='.$registro.'&val='.$token;	
 					//ESTRUCTURA DEL CORREO ENVIADO
 					$asunto='Activar Cuenta - Cactusivar';
 					$cuerpo="Estimado $nombre: <br/><br/>Para continuar el registro, es necesario hacer clic en el enlace
