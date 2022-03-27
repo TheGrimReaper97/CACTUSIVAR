@@ -79,7 +79,7 @@
                     <div  class="m-4 m-lg-5">
                         <h1 class="display-5 fw-bold">Bienvenido!</h1>
                         <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas y suculentas.
-                              </p>
+                        </p>
                         <a class="btn btn-primary btn-lg" href="#!">Acerca de Nosotros</a>
                     </div>
                 </div>
