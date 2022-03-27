@@ -27,7 +27,8 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
 		<script src="js/bootstrap.min.js" ></script>
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+		<!--CREATIVE COMMONS 1.O UNIVERSAL-->
+		<a rel="license" href="http://creativecommons.org/publicdomain/mark/1.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/p/mark/1.0/88x31.png" /></a><br /></a>.
 	</head>
 	
 	<body>
