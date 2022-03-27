@@ -20,7 +20,7 @@
     <body >
         <!-- Responsive navbar-->
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav style="background-color:green;" class="navbar navbar-expand-lg navbar-dark ">
             <div class="container px-lg-5">
                 <div id="mySidenav" class="sidenav">
                     <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -78,7 +78,8 @@
                 <div  class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div  class="m-4 m-lg-5">
                         <h1 class="display-5 fw-bold">Bienvenido Eres Administrador!</h1>
-                        <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas y suculentas.
+                        <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta al mayoreo de productos textiles 
+                            y artículos promocionales.
                             </p>
                         <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-lg" ><span class="glyphicon glyphicon-floppy-disk"></span> Agregar Nuevos Productos</a>   
                     </div>
@@ -139,7 +140,7 @@
            
         </section>
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer style="background-color:green;" class="py-5 ">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; CACTUSIVAR 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
