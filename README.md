@@ -7,8 +7,8 @@
 
 
 Manuel de Usuario 🧑🏻‍💻
+https://drive.google.com/file/d/1A39-51InZtvaaKSEkub0AZ2Iw29-Qi0D/view?usp=sharing
 
-[Como funciona] 
 
 
 NUESTRO NOTION:
@@ -42,6 +42,7 @@ Puede copiar, modificar, distribuir e interpretar la obra, incluso para propósi
 sin pedir permiso. Vea Otra información debajo.
 
 
-
+Aportes de Interes
+DOCUMENTO: https://drive.google.com/file/d/1ViBJt5c14XdU5YsmXyxRhmDRJSJuDdsS/view?usp=sharing
 
 
