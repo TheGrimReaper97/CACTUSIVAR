@@ -78,9 +78,7 @@
                 <div  class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div  class="m-4 m-lg-5">
                         <h1 class="display-5 fw-bold">Bienvenido!</h1>
-                        <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta al mayoreo de productos textiles 
-                            y artículos promocionales.
-                            </p>
+                        <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas y suculentas.
                         <a class="btn btn-primary btn-lg" href="#!">Acerca de Nosotros</a>
                     </div>
                 </div>
