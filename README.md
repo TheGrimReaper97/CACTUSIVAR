@@ -1,6 +1,4 @@
-# Mapa-Interactivo-El-Salvador
-Proyecto sobre un mapa interactivo para mejorar el aprendizaje 
-
+# CACTUSIVAR
 
 
 
@@ -11,13 +9,8 @@ te damos la bienvenida a un nuevo metodo de aprendizaje online 📋.
 
 Manuel de Usuario 🧑🏻‍💻
 
-[Como funciona] https://drive.google.com/file/d/1PEBSQkEFBoi2urpEEKeZyWjmKl0pGAFt/view?usp=sharing
+[Como funciona] 
 
-Herramientas 🛠️
-
-- Visual Studio Code
-- Balsamiq Mockups
-- Notion.so
 
 
 Autores ✒️
@@ -45,11 +38,5 @@ sin pedir permiso. Vea Otra información debajo.
 
 
 
-Enlaces de interés 👀
 
-[Tablero en Notion] https://www.notion.so/Ingenier-a-de-software-9ff278555545400fb554f1ede690111f
- 
-[Reporte PDF Sobre el Proyecto] https://drive.google.com/file/d/1C_V9sZfBm9-aG6jKg5tv06Af28lAHFZ2/view?usp=sharing
-
-[Video Presentación] https://drive.google.com/file/d/1_Bo1PTyWz28LGYvsYbbQvZBNcbuX4BYC/view?usp=sharing
 
