@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Heroic Features - Start Bootstrap Template</title>
+        <title>CACTUSIVAR</title>
         <!-- Favicon-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Bootstrap icons-->
@@ -43,12 +43,12 @@
                                  
                         </div>
                         <hr> 
-                        <a href="logout.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Cerrar Sesi&oacute;n</span> </a>
+                        <a href="login.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Iniciar Sesion</span> </a>
                         
                     </nav>
                   </div>
                   <span class="navegador" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-                <a class="navbar-brand" href="#!">TextilExport</a>
+                <a class="navbar-brand" href="#!">CACTUSIVAR</a>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                      Opciones
@@ -78,7 +78,7 @@
                 <div  class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div  class="m-4 m-lg-5">
                         <h1 class="display-5 fw-bold">Bienvenido Eres Administrador!</h1>
-                        <p class="fs-4">“TextilExport” es una empresa salvadoreña dedicada a la venta al mayoreo de productos textiles 
+                        <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta al mayoreo de productos textiles 
                             y artículos promocionales.
                             </p>
                         <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-lg" ><span class="glyphicon glyphicon-floppy-disk"></span> Agregar Nuevos Productos</a>   
@@ -141,7 +141,7 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021 Santos Ronaldo, Lemus Torres LT191211</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
