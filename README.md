@@ -17,8 +17,11 @@ Autores ✒️
 
 
 Katherine Lissette Sánchez Vila                SV161855
+
 Gerson Ernesto López Chevez                    LC151886
+
 Oscar Steven García Menjívar                   GM191382
+
 Santos Ronaldo Lemus Torres
 
 
