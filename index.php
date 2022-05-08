@@ -55,7 +55,7 @@
 	if(!isset($_SESSION['access_token']))
 	{
 
-	$login_button = '<a class="color" href="'.$google_client->createAuthUrl().'" >Login Google</a>';
+		$login_button = '<a class="tex" href="'.$google_client->createAuthUrl().'" >Entrar con Google</a>';
 	}
 	
 ?>
@@ -102,11 +102,12 @@
 								<input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
 							</div>
 							
-							<div style="margin-top:10px" class="form-group" >
-								<div class="col-sm-12 controls"> 
-									<button id="btn-login" type="submit" class="btn btn-info">Iniciar Sesi&oacute;n</a>
+							<div style="margin-top:10px; margin-bottom: 3px" class="form-group" >
+								<div class="col-lg-12"> 
+									<button id="btn-login" type="submit" class="btn btn-info btn-block">Iniciar Sesi&oacute;n</a>
 								</div>
 							</div>
+							<p>ó</p>
 							<!--PARA EL BOTON DE LOGIN CON GOOGLE-->
 							<?php
 								if($login_button == '')
@@ -115,9 +116,9 @@
 								}
 								else
 								{
-									echo '<div style="margin-top:20px" class="form-group" >';
-									echo '<div class="col-md-6 controls">';
-									echo '<button id="btn" type="submit" class="btn btn-danger">'.$login_button . '</a>';
+									echo '<div style="margin-top:7px" class="form-group" >';
+									echo '<div class="col-lg-12">';
+									echo '<button id="btn" type="submit" class="btn btn-danger btn-block">'.$login_button . '</a>';
 									echo '</div>';
 									echo '</div>';
 								}
