@@ -12,6 +12,51 @@
 		//llamamos a la funcion login
 		$errors[]=login($usuario,$password); 
 	}
+	//PARA LOGIN CON GOOGLE
+	include('config.php');
+
+	$login_button = '';
+
+	if(isset($_GET["code"]))
+	{
+	$token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
+	if(!isset($token['error']))
+	{
+	$google_client->setAccessToken($token['access_token']);
+	$_SESSION['access_token'] = $token['access_token'];
+	$google_service = new Google_Service_Oauth2($google_client);
+	$data = $google_service->userinfo->get(); 
+	if(!empty($data['given_name']))
+	{
+	$_SESSION['user_first_name'] = $data['given_name'];
+	}
+
+	if(!empty($data['family_name']))
+	{
+	$_SESSION['user_last_name'] = $data['family_name'];
+	}
+
+	if(!empty($data['email']))
+	{
+	$_SESSION['user_email_address'] = $data['email'];
+	}
+
+	if(!empty($data['gender']))
+	{
+	$_SESSION['user_gender'] = $data['gender'];
+	}
+
+	if(!empty($data['picture']))
+	{
+	$_SESSION['user_image'] = $data['picture'];
+	}
+	}
+	}
+	if(!isset($_SESSION['access_token']))
+	{
+
+	$login_button = '<a class="color" href="'.$google_client->createAuthUrl().'" >Login Google</a>';
+	}
 	
 ?>
 
@@ -62,7 +107,21 @@
 									<button id="btn-login" type="submit" class="btn btn-info">Iniciar Sesi&oacute;n</a>
 								</div>
 							</div>
-							
+							<!--PARA EL BOTON DE LOGIN CON GOOGLE-->
+							<?php
+								if($login_button == '')
+								{
+
+								}
+								else
+								{
+									echo '<div style="margin-top:20px" class="form-group" >';
+									echo '<div class="col-md-6 controls">';
+									echo '<button id="btn" type="submit" class="btn btn-danger">'.$login_button . '</a>';
+									echo '</div>';
+									echo '</div>';
+								}
+								?>
 							<div class="form-group">
 								<div class="col-md-12 control">
 									<div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
