@@ -1,7 +1,7 @@
 <?php
-require '../Modelo/conexion.php';
-require '../Modelo/funciones.php';
-require '../Modelo/send.php';
+require '../funciones/conexion.php';
+require '../funciones/funciones.php';
+require '../funciones/send.php';
 $errors = array();
 if (!empty($_POST)) {
 	$email = $mysqli->real_escape_string($_POST['email']);
@@ -13,8 +13,8 @@ if (!empty($_POST)) {
 		$nombre = getValor('nombre', 'correo', $email);
 		//generamos token
 		$token = generaTokenPass($user_id);
-		$url = 'http://' . $_SERVER["SERVER_NAME"] . '/TextilExport/cambiarC.php?user_id=' . $user_id . '&token=' . $token;
-		$asunto = 'Recuperar Contrasena - TextilExport';
+		$url = 'http://' . $_SERVER["SERVER_NAME"] . '/CACTUSIVAR/Vista/cambiarC.php?user_id=' . $user_id . '&token=' . $token;
+		$asunto = 'Recuperar Contrasena - CACTUSIVAR';
 		$cuerpo = "Estimado $nombre: <br/><br/>Para cambiar tu contrase&ntilde;a haz clic 
 			en el enlace: <a href='$url'>$url</a>"; ///recibimos la url
 		if (enviarEmail($email, $nombre, $asunto, $cuerpo)) {

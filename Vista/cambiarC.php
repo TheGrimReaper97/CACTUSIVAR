@@ -1,8 +1,8 @@
 <?php
 
-require '../Modelo/conexion.php';
-require '../Modelo/funciones.php';
-require '../Modelo/send.php';
+require '../funciones/conexion.php';
+require '../funciones/funciones.php';
+require '../funciones/send.php';
 $user_id = null;
 $token = null;
 //recibimos las variables user y token
@@ -32,10 +32,10 @@ if (!verificaTokenPass($user_id, $token)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cambiar Contraseña</title>
 
-	<link rel="stylesheet" href="css/loginstyle.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/loginstyle.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/bootstrap.min.js"></script>
 
 </head>
 
@@ -53,8 +53,7 @@ if (!verificaTokenPass($user_id, $token)) {
 
 					<form id="loginform" class="form-horizontal" role="form" action="guardarC.php" method="POST" autocomplete="off">
 
-						<input type="hidden" id="user_id" name="user_id" value="<?php echo $user_id; //ENVIAMOS DATOS DE MANERA OCULTA
-																				?>" />
+						<input type="hidden" id="user_id" name="user_id" value="<?php echo $user_id; //ENVIAMOS DATOS DE MANERA OCULTA?>" />
 
 						<input type="hidden" id="token" name="token" value="<?php echo $token; ?>" />
 
