@@ -7,6 +7,18 @@ html,body{
     -o-background-size: cover;
     background-size: cover;
 }
+.tex{
+    color: white;
+    font-size: 13.5px;
+}
+.tex:link, .tex:visited, .tex:active {
+    text-decoration:none;
+    color: white;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+}
 
 #loginbox{
     margin-top:200px;
