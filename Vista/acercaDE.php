@@ -68,44 +68,23 @@
         <div>
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                 <div class="m-4 m-lg-5">
-                    <h1 class="display-5 fw-bold">Bienvenido!</h1>
-                    <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas y suculentas.
-                    </p>
-                    <a class="btn btn-primary btn-lg" href="acercaDE.php">Acerca de Nosotros</a>
+                    <br><br><br><br><br>
+                    <h1 class="display-5 fw-bold">¿Quienes Somos?</h1>
+                    <h2 class="display-8 fw">
+                        “CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas y suculentas. ofrecemos diferentes variedades de plantas
+                        a domicilio. Desde tu ordenador o móvil, a cualquier hora y desde cualquier lugar.
+                        Son tres de las ventajas que más nos gustan de enviar Plantas por internet.
+                        Hoy por hoy muchas de las gestiones las podemos hacer con un móvil en las manos y enviar Plantas a domicilio es una de ellas.
+                    </h2>
+                    <br><br><br><br><br>
                 </div>
             </div>
         </div>
     </header>
     <!-- Page Content-->
-    <section class="pt-4">
-        <div class="container">
-            <?php
-            $query = "SELECT * FROM Productos";
-            $stmt = $connect->prepare($query);
-            $stmt->execute();
-            $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-            if ($stmt->rowCount() > 0) {
-                foreach ($results as $result) {
-            ?>
-                    <div class="col-md-4 mb-2" style=" border-color: #818181; border-left-width: thin;">
-                        <hr>
-                        <h3 style="text-align:center; " class="h3 mb-2"><?= $result->nombre ?></h3>
-                        <h5 style="text-align:center; " class="h5 mb-2"><?= $result->codigo ?></h5>
-                        <hr>
-                        <img class="img-responsive" border="2px" style="height: 300px; width: 300px; border-radius:150px; padding:  5px 5px 5px 5px;text-align:center" src="../img/<?= $result->img ?>"></img>
-                        <p style="text-align:center; padding:  15px 15px 15px 15px;"><?= $result->descripcion ?></p>
-                        <a style="text-align:center" href="#editarmodal_<?= $result->codigo ?>" data-toggle="modal" class="btn btn-success">Comprar</a> <a disabled="true" class="btn btn-primary" href="#!">Precio $<?= $result->precio ?></a> <a disabled="true" class="btn btn-primary" href="#!">Existencias <?= $result->existencias ?></a>
-                    </div>
-                    <?php include('ver_modal.php'); ?>
-            <?php
-                }
-            }
-            ?>
-        </div>
-        </div>
-        </div>
-    </section>
+
     <!-- Footer-->
+    <!-- Footer -->
     <footer style="background-color:green; color: white;" class="text-center text-lg-start">
         <!-- Section: Social media -->
 
@@ -179,6 +158,7 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <!-- Footer -->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

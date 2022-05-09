@@ -21,8 +21,6 @@
 </head>
 
 <body>
-    <!-- Responsive navbar-->
-
     <nav style="background-color:green;" class="navbar navbar-expand-lg navbar-dark ">
         <div class="container px-lg-5">
             <div id="mySidenav" class="sidenav">
@@ -33,6 +31,8 @@
                         <a href="index.php" class="nav_logo"><i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Menu</span> </a>
 
                         <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
+
+                            <a href="users.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
 
                             <a href="#abajo" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Contactos</span> </a>
 
@@ -65,13 +65,13 @@
     </nav>
     <!-- Header-->
     <header>
+
         <div>
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                 <div class="m-4 m-lg-5">
-                    <h1 class="display-5 fw-bold">Bienvenido!</h1>
+                    <h1 class="display-5 fw-bold">Bienvenido Eres Administrador!</h1>
                     <p class="fs-4">“CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas y suculentas.
                     </p>
-                    <a class="btn btn-primary btn-lg" href="acercaDE.php">Acerca de Nosotros</a>
                 </div>
             </div>
         </div>
@@ -79,29 +79,36 @@
     <!-- Page Content-->
     <section class="pt-4">
         <div class="container">
-            <?php
-            $query = "SELECT * FROM Productos";
-            $stmt = $connect->prepare($query);
-            $stmt->execute();
-            $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-            if ($stmt->rowCount() > 0) {
-                foreach ($results as $result) {
-            ?>
-                    <div class="col-md-4 mb-2" style=" border-color: #818181; border-left-width: thin;">
-                        <hr>
-                        <h3 style="text-align:center; " class="h3 mb-2"><?= $result->nombre ?></h3>
-                        <h5 style="text-align:center; " class="h5 mb-2"><?= $result->codigo ?></h5>
-                        <hr>
-                        <img class="img-responsive" border="2px" style="height: 300px; width: 300px; border-radius:150px; padding:  5px 5px 5px 5px;text-align:center" src="../img/<?= $result->img ?>"></img>
-                        <p style="text-align:center; padding:  15px 15px 15px 15px;"><?= $result->descripcion ?></p>
-                        <a style="text-align:center" href="#editarmodal_<?= $result->codigo ?>" data-toggle="modal" class="btn btn-success">Comprar</a> <a disabled="true" class="btn btn-primary" href="#!">Precio $<?= $result->precio ?></a> <a disabled="true" class="btn btn-primary" href="#!">Existencias <?= $result->existencias ?></a>
-                    </div>
-                    <?php include('ver_modal.php'); ?>
-            <?php
-                }
-            }
-            ?>
-        </div>
+            <table style="margin-bottom: 60px; margin-top: 60px;" class="table table-bordered" align="center">
+            <div style="text-align: center; margin-top: 8px;">
+            <img  border="2px" style="height: 150px; width: 150px; border-radius:150px; padding:  5px 5px 5px 5px;" src="../img/male2_85199.png">
+            </div>
+                <thead class="table-dark">
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Tipo</th>
+                </thead>
+                <tbody>
+                    <?php
+                    $query = "SELECT * FROM usuarios";
+                    $stmt = $connect->prepare($query);
+                    $stmt->execute();
+                    $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+                    if ($stmt->rowCount() > 0) {
+                        foreach ($results as $result) {  ?>
+                            <tr>
+                                <td style="width: 120px; padding:  10px 0px 5px 20px;"style="text-align:left" class="table-active"><?= $result->id ?>
+                                <td style="text-align:left"><?= $result->usuario ?></td>
+                                <td style="text-align:left"><?= $result->nombre ?></td>
+                                <td style="text-align:left"><?= $result->correo?></td>
+                                <td style="text-align:center"><?= $result->id_tipo ?></td>
+                            </tr>
+                    <?php }
+                    } ?>
+                </tbody>
+            </table>
         </div>
         </div>
     </section>
@@ -183,6 +190,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+
+
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
 
