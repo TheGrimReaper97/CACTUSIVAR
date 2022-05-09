@@ -28,15 +28,13 @@
                 <hr>
                 <nav class="nav">
                     <div>
-                        <a href="index.php" class="nav_logo"><i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Menu</span> </a>
-
-                        <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
+                       <div class="nav_list"> <a href="#" class="nav_link active"> 
 
                             <a href="users.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
 
                             <a href="#abajo" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Contactos</span> </a>
 
-                            <a href="acercaDE.php" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Acerca de</span> </a>
+                            <a href="acercaDEA.php" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Acerca de</span> </a>
 
                             <a href="usuario.php" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Inicio</span> </a>
                         </div>
@@ -57,7 +55,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="usuario.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="acercaDE.php">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acercaDEA.php">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#abajo">Contact</a></li>
                 </ul>
             </div>

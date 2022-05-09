@@ -1,7 +1,7 @@
 <?php
 
-require '../Modelo/conexion.php';
-require '../Modelo/funciones.php';
+require '../funciones/conexion.php';
+require '../funciones/funciones.php';
 //verificamos que l
 if (isset($_GET["id"]) and isset($_GET['val'])) {
 	$idUsuario = $_GET['id'];
@@ -19,9 +19,9 @@ if (isset($_GET["id"]) and isset($_GET['val'])) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registro</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/bootstrap.min.js"></script>
 
 </head>
 

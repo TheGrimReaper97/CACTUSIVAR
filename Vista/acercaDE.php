@@ -30,9 +30,8 @@
                 <hr>
                 <nav class="nav">
                     <div>
-                        <a href="index.php" class="nav_logo"><i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Menu</span> </a>
-
-                        <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
+                   
+                        <div class="nav_list"> <a href="#" class="nav_link active"> 
 
                             <a href="#abajo" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Contactos</span> </a>
 

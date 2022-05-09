@@ -1,7 +1,7 @@
 <?php
 session_start();
-require '../modelo/conexion.php';
-require '../modelo/funciones.php';
+require '../funciones/conexion.php';
+require '../funciones/funciones.php';
 $errors = array();
 if (!empty($_POST)) {
 	$usuario = $mysqli->real_escape_string($_POST['usuario']);
@@ -12,6 +12,7 @@ if (!empty($_POST)) {
 	//llamamos a la funcion login
 	$errors[] = login($usuario, $password);
 }
+
 //PARA LOGIN CON GOOGLE
 include('config.php');
 

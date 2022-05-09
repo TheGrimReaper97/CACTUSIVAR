@@ -11,7 +11,7 @@ $precio=$_POST['precio'];
 $exis=$_POST['exis'];
 
 ////////////// Insertar a la tabla la informacion generada /////////
-$query="insert into Productos(codigo,nombre,descripcion,categoria,precio,existencias,img ) VALUES (:codigo,:nombre,:desu,:cat,:precio,:exis,:name)";
+$query="insert into Productos(codigo,nombre,descripcion,categoria,precio,existencias,img,idUsuario ) VALUES (:codigo,:nombre,:desu,:cat,:precio,:exis,:name,'1')";
     
 $query = $connect->prepare($query);
 $query->bindParam(':codigo',$codigo,PDO::PARAM_STR, 9);

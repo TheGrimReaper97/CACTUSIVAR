@@ -1,7 +1,7 @@
 <?php
-require '../Modelo/conexion.php';
-require '../Modelo/funciones.php';
-require '../Modelo/send.php';
+require '../funciones/conexion.php';
+require '../funciones/funciones.php';
+require '../funciones/send.php';
 
 $errors = array(); //ERRORES DE CONEXION
 //VALIDANDO POST
@@ -58,9 +58,9 @@ if (!empty($_POST)) {
 			$registro = registraUsuario($usuario, $pass_hash, $nombre, $email, $activo, $token, $tipo_usuario);
 
 			if ($registro > 0) { //si devuelve id de registro
-				$url = 'http://' . $_SERVER["SERVER_NAME"] . '/TextilExport/activar.php?id=' . $registro . '&val=' . $token;
+				$url = 'http://' . $_SERVER["SERVER_NAME"] . '/CACTUSIVAR/Vista/activar.php?id=' . $registro . '&val=' . $token;
 				//ESTRUCTURA DEL CORREO ENVIADO
-				$asunto = 'Activar Cuenta - TextilExport';
+				$asunto = 'Activar Cuenta - CACTUSIVAR';
 				$cuerpo = "Estimado $nombre: <br/><br/>Para continuar el registro, es necesario hacer clic en el enlace
 					<a href='$url'>Activar Cuenta</a>";
 				if (enviarEmail($email, $nombre, $asunto, $cuerpo)) {
@@ -155,7 +155,7 @@ if (!empty($_POST)) {
 						<div class="form-group">
 							<label for="captcha" class="col-md-3 control-label"></label>
 							<div class="g-recaptcha col-md-9" data-sitekey="6LcAexAfAAAAAFB8ehZWX72x8Kfc-0NQ1MFbQx7r"></div>
-							<!--COLOCAR CAPTCHA DE GOOGLE-->
+							<!--COLOCANDO CAPTCHA DE GOOGLE-->
 						</div>
 
 						<div class="form-group">

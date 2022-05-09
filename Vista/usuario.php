@@ -1,4 +1,21 @@
-<?php include('../Modelo/BDconect.php'); ?>
+<?php
+session_start();
+include('../Modelo/BDconect.php');
+require '../funciones/conexion.php';
+require '../funciones/funciones.php';
+$errors = array();
+if (!empty($_POST)) {
+	$usuario = $mysqli->real_escape_string($_POST['usuario']);
+	$password = $mysqli->real_escape_string($_POST['password']);
+	if (isNullLogin($usuario, $password)) {
+		$errors[] = "Debes completar todos los campos";
+	}
+	//llamamos a la funcion login
+	$errors[] = login($usuario, $password);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="Es">
 
@@ -30,9 +47,8 @@
                 <hr>
                 <nav class="nav">
                     <div>
-                        <a href="index.php" class="nav_logo"><i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Menu</span> </a>
-
-                        <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
+                 
+                        <div class="nav_list"> <a href="#" class="nav_link active">
 
                             <a href="#abajo" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Contactos</span> </a>
 

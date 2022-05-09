@@ -3,10 +3,10 @@
 /*$connect = new PDO("mysql:host=localhost;dbname=php_consultapdo", "root", "");*/
 	
 // DB CREDENCIALES DE USUARIO.
-define('DB_HOST','localhost');
+define('DB_HOST','localhost:3305');
 define('DB_USER','root');
-define('DB_PASS','123456');
-define('DB_NAME','TextilExport');
+define('DB_PASS','');
+define('DB_NAME','cactusivar2');
  
 //  establecemos la conexión.
 try
