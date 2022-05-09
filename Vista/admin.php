@@ -32,15 +32,13 @@
 
                         <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
 
-                            <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
+                            <a href="users.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
 
-                            <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a>
+                            <a href="#abajo" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Contactos</span> </a>
 
-                            <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a>
+                            <a href="acercaDE.php" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Acerca de</span> </a>
 
-                            <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a>
-
-                            <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a>
+                            <a href="usuario.php#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Inicio</span> </a>
                         </div>
 
                     </div>
@@ -50,25 +48,17 @@
                 </nav>
             </div>
             <span class="navegador" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-            <a class="navbar-brand" href="#!">CACTUSIVAR</a>
+            <a class="navbar-brand" href="usuario.php">CACTUSIVAR</a>
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Opciones
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="usuario.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acercaDE.php">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#abajo">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -135,10 +125,78 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer style="background-color:green;" class="py-5 ">
-        <div class="container">
-            <p class="m-0 text-center text-white">CACTUSIVAR 2021</p>
+    <footer style="background-color:green; color: white;" class="text-center text-lg-start">
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h2 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>CACTUSIVAR
+                        </h2>
+                        <p>
+                        “CACTUSIVAR” es una empresa salvadoreña dedicada a la venta de plantas en linea.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Productos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Cactus</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Suculentas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Flores</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Hortalizas</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> San SVLD, NY 10012, ES</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            tiendaCACTUSIVAR@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 503 2345-67</p>
+                        <p><i class="fas fa-print me-3"></i> + 503 2345-67</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a name="abajo" class="text-reset fw-bold" href="https://CACTUSIVAR.com/">CACTUSIVAR.com</a>
         </div>
+        <!-- Copyright -->
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
