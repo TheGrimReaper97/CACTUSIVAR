@@ -179,7 +179,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
+            © 2022 Copyright:
             <a name="abajo" class="text-reset fw-bold" href="https://CACTUSIVAR.com/">CACTUSIVAR.com</a>
         </div>
         <!-- Copyright -->
