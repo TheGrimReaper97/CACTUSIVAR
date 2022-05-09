@@ -82,7 +82,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-				<button type="submit" name="add" class="btn btn-warning"><span class="glyphicon glyphicon-floppy-disk"></span> Modificar</a>
+				<button type="submit" name="add" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span> Modificar</a>
 					</form>
 			</div>
 
