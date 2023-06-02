@@ -28,6 +28,8 @@ Gerson Ernesto López Chevez                    LC151886
 
 Oscar Steven García Menjívar                   GM191382
 
+Rodrigo Humberto Aguilera Mendoza              AM201939
+
 Santos Ronaldo Lemus Torres                    LT191211
 
 
